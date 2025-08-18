@@ -10,8 +10,4 @@
 </p>
 
 
-<p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWo5NzhpOTI1dGRhMDY1MmhsMDI0d3Z3amNwNDB1bmxseXZxeHN0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OumCa12QC9CIvBe2c1/giphy.gif" width="400px">
-</p>
-
 
