@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Venta de Postres</h1>
+    <h3> Bienvenid@...</h3>
+    <h4> En este formulario podrá realizar la compra de postres y ver sus respectivos precios</h4>
+    <img src="https://img77.uenicdn.com/image/upload/v1567705999/category/shutterstock_191870003.jpg" alt="Algunos de nuestros postres..." width="300" height="200">
+    <img src="https://img77.uenicdn.com/image/upload/v1544802401/category/shutterstock_239564830.jpg" alt="Descripción de la imagen" width="300" height="200">
+    <img src="https://media.istockphoto.com/id/508459346/es/foto/escaparate-de-postres-en-una-pasteler%C3%ADa.jpg?s=612x612&w=0&k=20&c=KfLSzygU98IUGvSu6_0jgmDT6Jw_McGvGFIin-kThBc=" alt="Descripción de la imagen" width="300" height="200">
+    <img src="https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-cf73a32/www.goya.com/wp-content/uploads/2023/10/flan-de-queso-caramel-topped-cream-cheese-custard-900x900.jpg" alt="Descripción de la imagen" width="300" height="200">
+    <br><!-- Salto de línea según Bito-->
+    <form action="/procesar_compra" method="post">
+        <label for="nombre"> Nombre del cliente: </label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="postres">Seleccione el postre: </label>
+        <select name="postres" id="postres" required>
+            <option value="chs_lim"> Cheesecake de limón: 6800</option>
+            <option value="chs_frts"> Cheesecake de frutos rojos: 6800</option>
+            <option value="mrg"> Merengue: 4500 </option>
+            <option value="flan"> Flan de caramelo: 5700 </option>
+            <option value="tiramisu">Tiramisú: 8000</option>
+            <option value="macaroon">Macaroon: 8500</option>
+            <option value="tar_frambuesa">Tartaleta de frambuesa: 12000</option>
+        </select>
+        <label for="cantidad">Seleccione la cantidad que desea comprar: </label>
+        <select name="cantidad" id="cantidad" required>
+            <option value="uno">1</option>
+            <option value="dos">2</option>
+            <option value="tres">3</option>
+            <option value="cuatro">4</option>
+            <option value="cinco">5</option>
+            <option value="seis">6</option>
+            <option value="siete">7</option>
+            <option value="ocho">8</option>
+            <option value="nueve">9</option>
+            <option value="diez">10</option>
+        </select>
+
+        <label for="tamano">Tamaño del postre:</label>
+        <select name="tamano" id="tamano" required>
+            <option value="individual">Individual</option>
+            <option value="mediano">Mediano</option>
+            <option value="familiar">Familiar</option>
+        </select>
+        <br>
+        <label for="entrega"> Tipo de entrega: </label>
+        <select name="entrega" id="entrega" required>
+            <option value="tienda">Recoger en tienda</option>
+            <option value="domicilio">Entrega a domicilio</option>
+        </select>
+        <br>
+        <button type="submit" value="Producto Agregado" id="btnAgregar"> Agregar a la compra</button>
+    </form>
+    <section>
+        <form action="/Procesar_observacion" method="post">
+            <br>
+            <label for="observacion">Si tiene alguna observación por favor diligenciela aquí:</label>
+            <br>
+            <textarea name="observacion" id="observacion"></textarea>
+            <br>
+            <button type="submit" value="Observación enviada" id="btnEnvObs">Enviar Observación</button>
+        </form>
+    </section>
+    <section>
+        <form action="/recibir_informacion" method="post">
+            <br>
+            <label for="recibir_info">¿Desea recibir información adicional de la tienda? (promociones, nuevos lanzamientos, etc)</label>
+
+            <input type="radio" name="info[]" id="aceptar_info" value="acepta_informacion">
+            <label for="aceptar_info">Aceptar</label>
+            <input type="radio" name="info[]" id="rechazar_info" value="rechaza_informacion">
+            <label for="rechazar_info">Rechazar</label>
+            <br>
+            <label for="correo">En caso de aceptar diligencie su correo: </label>
+            <input type="email" name="email" id="email" placeholder="correo@ejemplo.com">
+            <br>
+            <button type="submit" value="Informacion_contacto_usuario" id="btnInfoUser">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <label for="contactar">Contactenos en: </label>
+        <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+        </ul>
+        <p> &copy; 2025 Venta_postres. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
