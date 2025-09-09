@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    height: 2%;
+    overflow: hidden;
+    margin: 0;
+    padding: 3px;
+}
+.navegacion {
+    background-color: #84C1D9;
+    width: 100%;
+    margin: 0;
+    padding: 3px;
+    display: flex;
+}                
+/*estilo de los links*/
+.navegacion a {
+    color: white;
+    text-align: center;
+    width: 25%;             
+    padding: 10px 0;              
+    text-decoration: none;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+.navegacion a:hover{
+    background-color:#225473;
+}
+.main,.descripcion-principal{
+    font-family:Tahoma;
+}
+/*Estilo de las celdas de la tabla*/
+td{
+    border: 1px solid #ccc;    
+    border-radius: 10px;        
+    padding: 20px;               
+    margin-bottom: 15px;
+}.noticia:hover{
+    transform: scale(1.05);
+    background-color:#e2dfdf
+
+}
+.table, .titulo{
+   color: #0c2439;
+   font-size: 17px;  
+   font-family:Tahoma;
+   text-align: center;
+   font-weight: bold;
+}
+.table,.fecha{
+   font-size: 13px;  
+   color: #5D7A8C;
+   font-family:Tahoma;
+   text-align: left;
+}
+.table,.fuente{
+   font-size: 13px;  
+   color: #5D7A8C;
+   font-family:Tahoma;
+   text-align: left; 
+}
+.table, .imagen{
+    text-align: center;
+    font-size: 13px; 
+    font-family:Tahoma;
+}
+.table, .descripcion {
+    font-size: 13px; 
+    font-family: Tahoma;
+    border-top: 1px solid #225473;
+}
+.logo{
+    text-align: center;
+}
+h2{
+    background-color: #CEE4F2;
+    text-align: center;
+    padding: 8px;
+    color: #0c2439;
+}
+.cards {
+  display: flex;  
+  gap: 30px;      
+  margin: 20px 0;
+}
+h3{
+    font-family: Tahoma;
+    font-size: 17px;
+}
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 13px;
+  width: 33.3%;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.card img {
+  width: 100%;     
+  border-radius: 10px;
+}
+.card:hover{
+   transform: scale(1.05);
+   background-color:#e2dfdf
+}
+.footer{
+    background-color: #0c2439;
+    color: white;
+    font-family: tahoma;
+}
