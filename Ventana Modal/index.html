@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="correo_terminos_usuario">
+        <h2 class="titulo">Bienvenido a la página</h2>
+        <label for="nombre"> Ingrese su correo para ingresar a la página: <br></label>
+        <input type="text" name="nombre" id="nombre">
+        <button id="btnEnviarCorreo"> Registrar</button>
+        <p>Para ingresar a la página debe leer <br> y aceptar los términos y condiciones </p>
+        <br>
+        <button id="abrirModalBtn">Mostrar Términos</button>
+    </div>
+    <div id="modalOverlay" class="overlay">
+        <div class="modal">
+            <h3>Términos y Condiciones</h3>
+            <p> Al registrarse en esta aplicación, usted acepta el uso de sus datos<br>
+  conforme a nuestra política de privacidad y términos de servicio.</p>
+            <input type="checkbox" id="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <br>
+            <button id="cerrarModalBtn">Cerrar</button>
+        </div>
+    </div>
+</body>
+</html> 
