@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - StyleClub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <!-- Logo y título -->
+        <div class="logo">StyleClub</div>
+        <p class="slogan">Tu estilo, tu mundo, tu tienda.</p>
+        
+        <h2>Iniciar Sesión</h2>
+        
+        <!-- Formulario de login -->
+        <form id="formulario-login" class="formulario-login">
+            <div class="grupo-input">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+            
+            <div class="grupo-input">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" placeholder="Ingresa tu contraseña" required>
+            </div>
+            
+            <button type="submit" class="boton-login">Ingresar</button>
+        </form>
+        
+        <!-- Mensaje de error -->
+        <div id="mensaje-error" class="mensaje-error"></div>
+        
+        <!-- Info demo -->
+        <div class="info-demo">
+            <strong>Datos de prueba:</strong><br>
+            Usuario: <span>emilys</span><br>
+            Contraseña: <span>emilyspass</span>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
